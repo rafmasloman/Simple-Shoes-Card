@@ -1,0 +1,102 @@
+.shoes-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.shoes-footer .shoes-btn {
+  width: 100%;
+  height: 35px;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #0e75eb;
+  color: #ffff;
+  border: none;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  align-self: flex-end;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(14, 117, 235, 0.3);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(14, 117, 235, 0.3);
+  box-shadow: 0px 10px 20px 0px rgba(14, 117, 235, 0.3);
+}
+
+.shoes-description {
+  display: grid;
+  grid-template-columns: repeat(1, 300px);
+  grid-template-rows: 30% 90px auto;
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+}
+.shoes-description .shoes-hero {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.shoes-description .shoes-hero .shoes-name {
+  font-size: 24px;
+  font-weight: 600;
+}
+.shoes-description .shoes-hero .shoes-price {
+  font-size: 18px;
+  font-weight: 500;
+}
+.shoes-description .shoes-size-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-self: flex-end;
+  font-family: "Poppins", sans-serif;
+}
+.shoes-description .shoes-size-container p {
+  font-weight: 600;
+}
+.shoes-description .shoes-size-container .shoes-size {
+  text-decoration: none;
+  background-color: #e8e8e8;
+  padding: 5px;
+  font-weight: 500;
+  border-radius: 5px;
+  color: black;
+  width: 30px;
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.shoes-description .shoes-size-container .shoes-size:active {
+  background-color: #0e75eb;
+  color: #ffff;
+}
+
+.shoes-card {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: min-content;
+  padding: 20px 0px 20px 0px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(128, 128, 128, 0.25);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(128, 128, 128, 0.25);
+  box-shadow: 0px 10px 20px 0px rgba(128, 128, 128, 0.25);
+}
+.shoes-card .img-field {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.shoes-card .img-field .shoes-img {
+  width: 250px;
+  height: 250px;
+}
+
+/*# sourceMappingURL=Card.css.map */

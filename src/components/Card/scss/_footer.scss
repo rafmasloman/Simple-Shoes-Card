@@ -1,0 +1,21 @@
+@use "mixin";
+.shoes-footer {
+  @include mixin.flex-management(space-between);
+  .shoes-btn {
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #0e75eb;
+    color: #ffff;
+    border: none;
+    padding: 20px;
+    @include mixin.flex-management(center);
+    align-items: center;
+    cursor: pointer;
+    align-self: flex-end;
+    @include mixin.box-shadow-style();
+  }
+}

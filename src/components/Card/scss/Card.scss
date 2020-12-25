@@ -1,0 +1,19 @@
+@use 'footer';
+@use 'content';
+@use 'mixin';
+.shoes-card {
+  @include mixin.flex-management(space-around, column);
+  align-items: center;
+  width: 350px;
+  height: min-content;
+  padding: 20px 0px 20px 0px;
+  border-radius: 20px;
+  @include mixin.box-shadow-shoes-card();
+  .img-field {
+    @include mixin.flex-management(center, column);
+    .shoes-img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}

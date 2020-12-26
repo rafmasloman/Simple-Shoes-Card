@@ -65,7 +65,7 @@
   font-weight: 500;
   border-radius: 5px;
   color: black;
-  width: 30px;
+  width: 25px;
   align-self: center;
   display: flex;
   justify-content: space-around;
@@ -76,7 +76,18 @@
   color: #ffff;
 }
 
-.shoes-card {
+.shoes-container {
+  width: 100vw;
+  height: 100%;
+  margin-top: 50px;
+  /* display: flex;
+  justify-content: space-around; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  justify-content: center;
+  gap: 50px;
+}
+.shoes-container .shoes-card {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -89,14 +100,17 @@
   -moz-box-shadow: 0px 10px 20px 0px rgba(128, 128, 128, 0.25);
   box-shadow: 0px 10px 20px 0px rgba(128, 128, 128, 0.25);
 }
-.shoes-card .img-field {
+.shoes-container .shoes-card .img-field {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.shoes-card .img-field .shoes-img {
+.shoes-container .shoes-card .img-field .shoes-img {
   width: 250px;
   height: 250px;
+}
+.shoes-container .shoes-card .cart-icon {
+  color: blue;
 }
 
 /*# sourceMappingURL=Card.css.map */

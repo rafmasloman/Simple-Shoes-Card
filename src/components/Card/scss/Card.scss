@@ -1,19 +1,33 @@
 @use 'footer';
 @use 'content';
 @use 'mixin';
-.shoes-card {
-  @include mixin.flex-management(space-around, column);
-  align-items: center;
-  width: 350px;
-  height: min-content;
-  padding: 20px 0px 20px 0px;
-  border-radius: 20px;
-  @include mixin.box-shadow-shoes-card();
-  .img-field {
-    @include mixin.flex-management(center, column);
-    .shoes-img {
-      width: 250px;
-      height: 250px;
+.shoes-container {
+  width: 100vw;
+  height: 100%;
+  margin-top: 50px;
+  /* display: flex;
+  justify-content: space-around; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  justify-content: center;
+  gap: 50px;
+  .shoes-card {
+    @include mixin.flex-management(space-around, column);
+    align-items: center;
+    width: 350px;
+    height: min-content;
+    padding: 20px 0px 20px 0px;
+    border-radius: 20px;
+    @include mixin.box-shadow-shoes-card();
+    .img-field {
+      @include mixin.flex-management(center, column);
+      .shoes-img {
+        width: 250px;
+        height: 250px;
+      }
+    }
+    .cart-icon {
+      color: blue;
     }
   }
 }

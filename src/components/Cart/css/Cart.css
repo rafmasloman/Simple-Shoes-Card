@@ -1,0 +1,38 @@
+.cart-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+.cart-container .cart-hero {
+  width: 100px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.cart-container .cart-hero a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.cart-container .cart-hero a .font-awesome-icon {
+  font-size: 36px;
+}
+.cart-container .cart-hero::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  background-color: #0e75eb;
+  position: absolute;
+  right: 65px;
+  top: 5px;
+  border-radius: 50px;
+}
+.cart-container .cart-hero h1 {
+  color: #ffff;
+  font-size: 18px;
+  position: absolute;
+  right: 75px;
+  top: -8px;
+}
+
+/*# sourceMappingURL=Cart.css.map */

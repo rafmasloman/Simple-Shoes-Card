@@ -4,6 +4,7 @@ import shoesImg2 from "../Card/nike blue.png";
 import shoesImg3 from "../Card/nike white.png";
 import "./css/Card.css";
 import Cart from "../Cart/Cart";
+import Shoes from "./Shoes";
 
 class Card extends Component {
   state = {
@@ -35,14 +36,6 @@ class Card extends Component {
     ],
   };
 
-  counterChange = () => {
-    this.setState({
-      counter: {
-        count: this.state.counter.count + 1,
-      },
-    });
-  };
-
   getId = () => {
     this.state.shoes.map((shoesId) => console.log(shoesId.id));
     // console.log("ini Id");
@@ -51,9 +44,8 @@ class Card extends Component {
   render() {
     return (
       <Fragment>
-        <Cart getCounter={this.state.counter} shoesId={this.getId} />
         <section className="shoes-container">
-          {this.state.shoes.map((shoes) => (
+          {/* {this.state.shoes.map((shoes) => (
             <div className="shoes-card" key={shoes.id}>
               <div className="img-field">
                 <img src={shoes.img} alt="" className="shoes-img" />
@@ -81,6 +73,15 @@ class Card extends Component {
                 </div>
               </div>
             </div>
+          ))} */}
+          {this.state.shoes.map((shoes) => (
+            <Shoes
+              id={shoes.id}
+              name={shoes.name}
+              price={shoes.price}
+              image={shoes.img}
+              size={shoes.size}
+            />
           ))}
         </section>
       </Fragment>
@@ -88,5 +89,4 @@ class Card extends Component {
   }
 }
 
-console.log(typeof Card);
 export default Card;

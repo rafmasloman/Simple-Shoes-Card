@@ -12,10 +12,16 @@
     color: #ffff;
     border: none;
     padding: 20px;
-    @include mixin.flex-management(center);
     align-items: center;
     cursor: pointer;
     align-self: flex-end;
+    @include mixin.flex-management(center);
     @include mixin.box-shadow-style();
+    outline: none;
+    transition: ease-in-out 1s;
+    &:hover {
+      transform: scaleX(1);
+      background-color: rgb(9, 56, 110);
+    }
   }
 }

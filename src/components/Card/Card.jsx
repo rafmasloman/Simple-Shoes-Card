@@ -41,9 +41,18 @@ class Card extends Component {
     // console.log("ini Id");
   };
 
+  counterChange = (newValue) => {
+    this.setState({
+      counter: {
+        count: newValue,
+      },
+    });
+  };
+
   render() {
     return (
       <Fragment>
+        <Cart counter={this.state.counter} />
         <section className="shoes-container">
           {/* {this.state.shoes.map((shoes) => (
             <div className="shoes-card" key={shoes.id}>
@@ -81,6 +90,8 @@ class Card extends Component {
               price={shoes.price}
               image={shoes.img}
               size={shoes.size}
+              key={shoes.id}
+              counter={(value) => this.counterChange(value)}
             />
           ))}
         </section>

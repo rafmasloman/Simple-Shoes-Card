@@ -8,7 +8,7 @@ class Cart extends Component {
       <section className="cart-container">
         <div className="cart-hero">
           {/* {this.props.id()} */}
-          <h1>{this.props.getCounter.count}</h1>
+          <h1>{this.props.counter.count}</h1>
           <a onClick={this.props.shoesId}>
             <FontAwesomeIcon icon={faCartPlus} className="font-awesome-icon" />
           </a>

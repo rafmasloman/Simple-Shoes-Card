@@ -35,10 +35,23 @@ class Card extends Component {
     ],
   };
 
+  counterChange = () => {
+    this.setState({
+      counter: {
+        count: this.state.counter.count + 1,
+      },
+    });
+  };
+
+  getId = () => {
+    this.state.shoes.map((shoesId) => console.log(shoesId.id));
+    // console.log("ini Id");
+  };
+
   render() {
     return (
       <Fragment>
-        <Cart getCounter={this.state.counter} />
+        <Cart getCounter={this.state.counter} shoesId={this.getId} />
         <section className="shoes-container">
           {this.state.shoes.map((shoes) => (
             <div className="shoes-card" key={shoes.id}>
@@ -59,7 +72,12 @@ class Card extends Component {
                   ))}
                 </div>
                 <div className="shoes-footer">
-                  <button className="shoes-btn">Add To cart</button>
+                  <button
+                    className="shoes-btn active"
+                    onClick={this.counterChange}
+                  >
+                    Add To cart
+                  </button>
                 </div>
               </div>
             </div>
@@ -70,4 +88,5 @@ class Card extends Component {
   }
 }
 
+console.log(typeof Card);
 export default Card;
